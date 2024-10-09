@@ -1,1 +1,2 @@
-apt_src krb5
+git_src --branch debian/1.21.3-3 https://salsa.debian.org/debian/krb5
+version_suffix=gl0+bp1443

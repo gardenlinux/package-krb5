@@ -1,5 +1,5 @@
 version_orig=1.22.1
-version="$version_orig-2.1"
-git_src -b "debian/$version" "https://salsa.debian.org/debian/krb5"
-
+version="$version_orig-3"
 version_suffix=gl0+bp2150
+
+git_src -b "debian/$version" "https://salsa.debian.org/debian/krb5.git"

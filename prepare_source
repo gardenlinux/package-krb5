@@ -1,5 +1,7 @@
-version_orig=1.22.1
-version="$version_orig-3"
-version_suffix=gl0+bp2150
+version_orig="1.22.3"
+version="$version_orig-1"
+version_suffix=gl0+bp1877
 
-git_src -b "debian/$version" "https://salsa.debian.org/debian/krb5.git"
+# at 1877.29 there is no debian for 1.22.3, so we use master and git commit
+SALSA_REPO_COMMIT="8f577a2d9c088ce49da0f9b16ae98520d9d4bb21" # latest on 2026-11-20
+git_src_commit "$SALSA_REPO_COMMIT" "https://salsa.debian.org/debian/krb5.git"
